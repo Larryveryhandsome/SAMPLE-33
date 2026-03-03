@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿野仙踪親友聚會包棟民宿 | 彰化鹿港電梯包棟推薦</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        deer: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#a67c52', /* 主色調：溫暖木質/大地色 */
+                            600: '#8c633e',
+                            700: '#734f30',
+                            800: '#593b22',
+                            900: '#402916',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .hero-bg {
+            background-color: #fdf8f6;
+            background-image: radial-gradient(#d2bab0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 top-0 border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <div class="w-10 h-10 bg-deer-100 rounded-lg flex items-center justify-center text-deer-600 group-hover:bg-deer-500 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-house-chimney-window text-xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-xl text-stone-900 tracking-wide">鹿野仙踪</span>
+                            <span class="text-[10px] text-stone-500 font-medium tracking-widest">DEER GARDEN INN</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#features" class="text-stone-600 hover:text-deer-600 font-medium transition-colors">民宿特色</a>
+                    <a href="#facilities" class="text-stone-600 hover:text-deer-600 font-medium transition-colors">娛樂設施</a>
+                    <a href="#rooms" class="text-stone-600 hover:text-deer-600 font-medium transition-colors">房型介紹</a>
+                    <a href="#contact" class="text-stone-600 hover:text-deer-600 font-medium transition-colors">交通與聯絡</a>
+                    <div class="flex items-center gap-3 border-l border-stone-200 pl-6">
+                        <a href="https://line.me/ti/p/~0978210930" target="_blank" class="bg-[#00B900] text-white px-5 py-2.5 rounded-full hover:bg-[#009900] font-medium transition-colors shadow-lg shadow-[#00B900]/20 flex items-center">
+                            <i class="fa-brands fa-line mr-2 text-lg"></i>加 LINE 訂房
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-stone-600 hover:text-stone-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-stone-100 pb-4 shadow-xl absolute w-full">
+            <div class="px-4 pt-2 pb-3 space-y-2">
+                <a href="#features" class="block px-3 py-3 text-stone-600 hover:text-deer-600 hover:bg-stone-50 rounded-lg font-medium">民宿特色</a>
+                <a href="#facilities" class="block px-3 py-3 text-stone-600 hover:text-deer-600 hover:bg-stone-50 rounded-lg font-medium">娛樂設施</a>
+                <a href="#rooms" class="block px-3 py-3 text-stone-600 hover:text-deer-600 hover:bg-stone-50 rounded-lg font-medium">房型介紹</a>
+                <a href="#contact" class="block px-3 py-3 text-stone-600 hover:text-deer-600 hover:bg-stone-50 rounded-lg font-medium">交通與聯絡</a>
+                <a href="https://line.me/ti/p/~0978210930" target="_blank" class="block px-3 py-3 mt-4 bg-[#00B900] text-white text-center rounded-lg font-bold">
+                    <i class="fa-brands fa-line mr-2"></i> LINE 立即訂房
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="lg:w-1/2 space-y-8 relative z-10">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-white border border-stone-200 text-stone-600 text-xs font-bold shadow-sm">
+                            <i class="fa-solid fa-check-circle text-green-500 mr-1.5"></i> 彰化合法民宿 第160號
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-deer-100 text-deer-700 text-xs font-bold">
+                            全新開幕
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-stone-900 leading-[1.2]">
+                        鹿港小鎮的<br>
+                        <span class="text-deer-600">專屬相聚時光</span>
+                    </h1>
+                    <p class="text-lg text-stone-600 leading-relaxed max-w-lg font-medium">
+                        全新獨棟電梯別墅，間間獨立套房。最多可容納 24 人包棟！<br>
+                        120吋投影 KTV 唱歌不限時、電動麻將、庭院烤肉、戲水池，從老到小都能在這裡找到屬於自己的快樂。
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#contact" class="bg-deer-600 text-white px-8 py-4 rounded-full hover:bg-deer-700 font-bold transition-all shadow-lg shadow-deer-600/30 flex items-center text-lg transform hover:-translate-y-1">
+                            <i class="fa-solid fa-calendar-check mr-2"></i> 預約包棟
+                        </a>
+                        <a href="tel:0978210930" class="bg-white text-stone-700 border border-stone-200 px-8 py-4 rounded-full hover:bg-stone-50 font-bold transition-all shadow flex items-center text-lg">
+                            <i class="fa-solid fa-phone-volume mr-2 text-deer-600"></i> 0978-210-930
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 w-full relative">
+                    <!-- Decor elements -->
+                    <div class="absolute -inset-4 bg-deer-200 rounded-[2.5rem] transform rotate-3 scale-105 opacity-40"></div>
+                    <div class="absolute -inset-4 bg-stone-200 rounded-[2.5rem] transform -rotate-2 scale-105 opacity-40"></div>
+                    
+                    <!-- Main Image Placeholder -->
+                    <div class="relative bg-white rounded-[2rem] shadow-2xl overflow-hidden aspect-[4/3] flex items-center justify-center border-8 border-white group">
+                        <div class="text-center text-stone-400 p-8">
+                            <i class="fa-solid fa-house-chimney-window text-6xl mb-4 text-deer-300 group-hover:scale-110 transition-transform duration-500"></i>
+                            <p class="font-medium text-lg"></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 lg:-left-12 bg-white p-5 rounded-2xl shadow-xl flex items-center gap-4 border border-stone-100 z-20">
+                        <div class="w-14 h-14 bg-gradient-to-br from-deer-400 to-deer-600 text-white rounded-full flex items-center justify-center text-2xl shadow-inner">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-stone-500 font-bold tracking-wider uppercase">Capacity</div>
+                            <div class="text-xl font-black text-stone-900">最高容納 24 人</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Features Bar -->
+    <div class="bg-stone-900 text-white py-8 relative z-20 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-stone-700">
+                <div class="px-2">
+                    <i class="fa-solid fa-elevator text-2xl text-deer-400 mb-2"></i>
+                    <h4 class="font-bold text-sm md:text-base">全新電梯別墅</h4>
+                    <p class="text-xs text-stone-400 mt-1 hidden md:block">長輩免爬樓梯最輕鬆</p>
+                </div>
+                <div class="px-2">
+                    <i class="fa-solid fa-bath text-2xl text-deer-400 mb-2"></i>
+                    <h4 class="font-bold text-sm md:text-base">間間獨立套房</h4>
+                    <p class="text-xs text-stone-400 mt-1 hidden md:block">每房專屬衛浴享隱私</p>
+                </div>
+                <div class="px-2">
+                    <i class="fa-solid fa-car-side text-2xl text-deer-400 mb-2"></i>
+                    <h4 class="font-bold text-sm md:text-base">大停車場+充電樁</h4>
+                    <p class="text-xs text-stone-400 mt-1 hidden md:block">遊覽車可停/EV友善</p>
+                </div>
+                <div class="px-2">
+                    <i class="fa-solid fa-baby text-2xl text-deer-400 mb-2"></i>
+                    <h4 class="font-bold text-sm md:text-base">超狂親子友善</h4>
+                    <p class="text-xs text-stone-400 mt-1 hidden md:block">備齊澡盆/消毒鍋/圍欄</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-deer-600 font-bold tracking-widest text-sm uppercase mb-2 block">Entertainment</span>
+                <h2 class="text-3xl md:text-4xl font-black text-stone-900 mb-4">待在民宿，就是最好的行程</h2>
+                <div class="w-24 h-1.5 bg-deer-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-stone-600 text-lg">超過百坪的室內外活動空間，為親友聚會打造最完美的娛樂天堂，大人小孩都不無聊！</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Facility 1 -->
+                <div class="bg-stone-50 rounded-[2rem] p-8 border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl text-indigo-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-3 flex items-center gap-2">
+                        豪華 KTV 劇院 <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded font-bold">不限時</span>
+                    </h3>
+                    <p class="text-stone-600 leading-relaxed">大客廳配備 120 吋超大投影幕與專業影音設備，最棒的是唱歌完全不限時！讓您盡情歡唱到天明。</p>
+                </div>
+
+                <!-- Facility 2 -->
+                <div class="bg-stone-50 rounded-[2rem] p-8 border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl text-emerald-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chess-board"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-3">電動麻將桌</h3>
+                    <p class="text-stone-600 leading-relaxed">大交誼廳內設有電動麻將桌，親友摸兩圈試試手氣，旁邊還能同時吃火鍋、玩桌遊，空間超寬敞。</p>
+                </div>
+
+                <!-- Facility 3 -->
+                <div class="bg-stone-50 rounded-[2rem] p-8 border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-3">設備齊全大廚房</h3>
+                    <p class="text-stone-600 leading-relaxed">提供設備完善的廚房讓您自炊大顯身手。戶外更可安排烤肉 BBQ，邊吃邊玩最過癮！</p>
+                </div>
+
+                <!-- Facility 4 -->
+                <div class="bg-stone-50 rounded-[2rem] p-8 border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl text-sky-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-water-ladder"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-3">戶外戲水池</h3>
+                    <p class="text-stone-600 leading-relaxed">炎炎夏日絕對少不了的戲水設施！專屬的戶外戲水池讓大小朋友都能安全、開心地打水仗消暑。</p>
+                </div>
+
+                <!-- Facility 5 -->
+                <div class="bg-stone-50 rounded-[2rem] p-8 border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl text-green-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-3">90 坪無敵大草坪</h3>
+                    <p class="text-stone-600 leading-relaxed">寬廣平坦的綠地，不僅視野開闊，更適合讓孩子們盡情奔跑放電、舉辦草地派對或戶外團康活動。</p>
+                </div>
+
+                <!-- Facility 6 -->
+                <div class="bg-deer-600 rounded-[2rem] p-8 text-white hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-center relative overflow-hidden group">
+                    <div class="absolute -right-8 -bottom-8 text-deer-500 opacity-30 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-bowl-food text-[150px]"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-3xl text-white mb-6">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">貼心宵夜與備品</h3>
+                        <p class="text-deer-50 leading-relaxed">玩到半夜肚子餓？別擔心！我們免費提供多款泡麵。同時嬰兒浴盆、消毒鍋等設備也一應俱全，讓爸媽輕鬆入住。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Section -->
+    <section id="rooms" class="py-24 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-deer-600 font-bold tracking-widest text-sm uppercase mb-2 block">Our Rooms</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-stone-900 mb-4">溫馨舒適的睡眠空間</h2>
+                    <div class="w-24 h-1.5 bg-deer-500 rounded-full mb-6"></div>
+                    <p class="text-stone-600 text-lg">5 間以上大坪數房型，間間獨立衛浴。可依人數選擇彈性小包棟或全棟包場。</p>
+                </div>
+                <div class="bg-white px-6 py-4 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="text-sm text-stone-500 font-bold mb-1">參考房價</div>
+                    <div class="text-2xl font-black text-stone-900">NT$ 3,800 <span class="text-lg text-stone-500 font-normal">~</span> 6,500 <span class="text-sm font-normal text-stone-500">/ 房</span></div>
+                    <div class="text-xs text-stone-400 mt-1">* 實際包棟價格請加 LINE 洽詢</div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Room 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] bg-stone-200 relative flex items-center justify-center overflow-hidden">
+                        <i class="fa-solid fa-bed text-5xl text-stone-400 group-hover:scale-110 transition-transform duration-500"></i>
+                        <p class="absolute bottom-4 font-medium text-stone-500"></p>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-2">標準雙人套房</h3>
+                        <p class="text-stone-600 mb-6">配備 King Size 大床，溫馨居家風格裝潢，擁有獨立衛浴與冷暖空調，給您安靜舒適的一夜好眠。</p>
+                        <ul class="space-y-2 text-sm text-stone-500 font-medium">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 獨立衛浴設備</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 大尺寸雙人床</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 液晶電視 & Wi-Fi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] bg-stone-200 relative flex items-center justify-center overflow-hidden">
+                        <i class="fa-solid fa-bed text-5xl text-stone-400 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute top-4 right-4 bg-deer-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">
+                            超人氣
+                        </div>
+                        <p class="absolute bottom-4 font-medium text-stone-500"></p>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-2">歡樂親子房</h3>
+                        <p class="text-stone-600 mb-6">專為有孩童的家庭打造，房內附設專屬「兒童溜滑梯」與秘密基地，讓小朋友回房繼續開心玩樂！</p>
+                        <ul class="space-y-2 text-sm text-stone-500 font-medium">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 房內專屬溜滑梯</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 兒童防護設施</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 可加嬰兒床/床中床</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] bg-stone-200 relative flex items-center justify-center overflow-hidden">
+                        <i class="fa-solid fa-users text-5xl text-stone-400 group-hover:scale-110 transition-transform duration-500"></i>
+                        <p class="absolute bottom-4 font-medium text-stone-500"></p>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-2">溫馨四人套房</h3>
+                        <p class="text-stone-600 mb-6">寬敞的兩大床配置，適合家庭或閨蜜好友同住。空間明亮採光佳，即使行李多也不顯擁擠。</p>
+                        <ul class="space-y-2 text-sm text-stone-500 font-medium">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 兩張大尺寸雙人床</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 乾濕分離衛浴</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-deer-500 w-5"></i> 寬敞活動空間</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Occasions Banner -->
+    <section class="py-20 bg-deer-800 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-black mb-10">最適合這些場合的包棟首選</h2>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12">
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-3xl mb-4 border border-white/20">👨‍👩‍👧‍👦</div>
+                    <h4 class="font-bold text-xl">家族旅遊/三代同堂</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-3xl mb-4 border border-white/20">🎂</div>
+                    <h4 class="font-bold text-xl">朋友慶生/求婚</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-3xl mb-4 border border-white/20">🎓</div>
+                    <h4 class="font-bold text-xl">同學會聚餐</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-3xl mb-4 border border-white/20">💼</div>
+                    <h4 class="font-bold text-xl">公司員工聚會</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Info -->
+                <div>
+                    <span class="text-deer-600 font-bold tracking-widest text-sm uppercase mb-2 block">Location & Contact</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-stone-900 mb-8">預約您的美好假期</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-stone-100 rounded-full flex items-center justify-center text-deer-600 shrink-0 text-xl shadow-sm border border-stone-200">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pt-1">
+                                <h4 class="text-xl font-bold text-stone-900 mb-1">民宿地址</h4>
+                                <p class="text-stone-600 text-lg mb-2">彰化縣鹿港鎮鹿草路二段912巷63之1號</p>
+                                <p class="text-sm text-deer-600 font-medium bg-deer-50 inline-block px-3 py-1 rounded-md">
+                                    <i class="fa-solid fa-car mr-1"></i> 門前大空間免費停車（附監視器）
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-stone-100 rounded-full flex items-center justify-center text-deer-600 shrink-0 text-xl shadow-sm border border-stone-200">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="pt-1">
+                                <h4 class="text-xl font-bold text-stone-900 mb-1">訂房專線</h4>
+                                <a href="tel:0978210930" class="text-stone-600 text-2xl font-black hover:text-deer-600 transition-colors tracking-wider block mb-1">0978-210-930</a>
+                                <div class="flex items-center gap-4 mt-2">
+                                    <a href="https://line.me/ti/p/~0978210930" target="_blank" class="text-sm font-bold text-[#00B900] bg-[#00B900]/10 px-3 py-1.5 rounded-md hover:bg-[#00B900]/20 transition-colors">
+                                        <i class="fa-brands fa-line mr-1"></i> LINE: 0978210930
+                                    </a>
+                                    <a href="https://wa.me/85246118625" target="_blank" class="text-sm font-bold text-[#25D366] bg-[#25D366]/10 px-3 py-1.5 rounded-md hover:bg-[#25D366]/20 transition-colors">
+                                        <i class="fa-brands fa-whatsapp mr-1"></i> +852 4611 8625
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notice -->
+                        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 mt-8 relative overflow-hidden">
+                            <div class="absolute -right-4 -top-4 text-amber-500/20 text-6xl">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h4 class="text-amber-800 font-bold mb-3 flex items-center gap-2 text-lg relative z-10">
+                                💡 鹿港順遊建議
+                            </h4>
+                            <p class="text-amber-800/80 leading-relaxed text-sm relative z-10">
+                                民宿距離鹿港市區景點（鹿港老街、天后宮等）開車約 15 分鐘。非常推薦白天先逛老街吃小吃，傍晚再買點美食回民宿，開啟全棟歡唱與麻將的聚會之夜！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Map -->
+                <div class="h-full">
+                    <div class="bg-stone-100 rounded-3xl overflow-hidden h-[400px] lg:h-full min-h-[400px] relative shadow-inner flex flex-col items-center justify-center border-4 border-white shadow-xl">
+                        <!-- Simulated Map view -->
+                        <div class="absolute inset-0 bg-stone-200">
+                            <!-- Pattern to simulate map streets -->
+                            <div class="w-full h-full opacity-20" style="background-image: repeating-linear-gradient(45deg, #a8a29e 25%, transparent 25%, transparent 75%, #a8a29e 75%, #a8a29e), repeating-linear-gradient(45deg, #a8a29e 25%, transparent 25%, transparent 75%, #a8a29e 75%, #a8a29e); background-position: 0 0, 20px 20px; background-size: 40px 40px;"></div>
+                        </div>
+                        <div class="relative z-10 text-center p-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg m-6">
+                            <div class="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center text-xl mx-auto mb-3 shadow-md animate-bounce">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-1">鹿野仙踪親友聚會包棟民宿</h3>
+                            <p class="text-sm text-stone-600 mb-4">彰化縣鹿港鎮鹿草路二段912巷63-1號</p>
+                            <a href="https://maps.app.goo.gl/CkP2qCADr9vtAY5CA" target="_blank" class="inline-flex items-center justify-center px-6 py-2.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors w-full shadow-md">
+                                <i class="fa-solid fa-map-location-dot mr-2"></i> 開啟 Google 導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 text-center text-sm border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <div class="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center text-stone-500 mb-6 text-2xl">
+                <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg mb-2">DEER GARDEN INN</h3>
+            <p class="mb-6">彰化合法民宿 第160號</p>
+            
+            <div class="flex space-x-6 mb-8">
+                <a href="https://www.facebook.com/profile.php?id=61571590713595" target="_blank" class="w-10 h-10 rounded-full bg-stone-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                </a>
+                <a href="https://line.me/ti/p/~0978210930" target="_blank" class="w-10 h-10 rounded-full bg-stone-900 flex items-center justify-center hover:bg-[#00B900] hover:text-white transition-all duration-300">
+                    <i class="fa-brands fa-line text-lg"></i>
+                </a>
+            </div>
+            
+            <div class="w-full border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 鹿野仙踪親友聚會包棟民宿. All rights reserved.</p>
+                <div class="text-stone-500">
+                    <span>位於充滿人文氣息的彰化鹿港</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
